@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Cormorant_Garamond, Plus_Jakarta_Sans, Playfair_Display } from "next/font/google";
+import { Cormorant_Garamond, Inter, Playfair_Display } from "next/font/google";
 import "@/styles/globals.css";
 import { siteConfig } from "@/config/site";
 import SmoothScroll from "@/components/providers/SmoothScroll";
@@ -13,21 +13,19 @@ const serifFont = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-serif",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
 });
 
-const sansFont = Plus_Jakarta_Sans({
+const sansFont = Inter({
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
-  weight: ["300", "400", "500", "600", "700"],
 });
 
 const accentFont = Cormorant_Garamond({
   subsets: ["latin"],
   variable: "--font-accent",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["400", "600", "700"],
 });
 
 export const metadata: Metadata = {
